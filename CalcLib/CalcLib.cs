@@ -1,5 +1,5 @@
 ﻿namespace CalcLib {
-    public class CalcLib {
+    public class RecursiveCalc {
                
         /// <summary>
         /// Returns the factorial for given input.  Initialise ans with 1
@@ -68,7 +68,7 @@
                 numFibs--;
                 num2 = num1 + num2;
                 return FibonacciRec(num2, num2 + num1, numFibs);
-            }        
+            }   
             return num2 + num1;
         }
     }

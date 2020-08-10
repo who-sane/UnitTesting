@@ -45,6 +45,10 @@
         /// <param name="divisor"></param>
         /// <returns></returns>
         public bool PrimeCheckRec(int num, int divisor) {
+            if (divisor <= 0) {
+                throw new System.DivideByZeroException();
+            }
+
             if (num == divisor) {
                 return true;
             }

@@ -68,12 +68,16 @@
         /// <param name="numFibs"></param>
         /// <returns></returns>
         public int FibonacciRec(int num1, int num2, int numFibs) {
-            if (numFibs > 0) {
+            if(numFibs == 1 || numFibs == 2)
+                return 1;
+            if(numFibs == 0)
+                return 0;
+            
+            if (numFibs > 2) {
                 numFibs--;
-                num2 = num1 + num2;
                 return FibonacciRec(num2, num2 + num1, numFibs);
             }   
-            return num2 + num1;
+            return num2;
         }
     }
 }
